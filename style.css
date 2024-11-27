@@ -1,37 +1,75 @@
 /* General reset */
-body, h1, p {
+body, h1, p, ul, li {
     margin: 0;
     padding: 0;
+    list-style: none;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Styling the body */
+/* Body styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f9f9f9;
     color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+    justify-content: flex-start;
 }
 
-/* Centering the content */
-.container {
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ddd;
+}
+
+/* Section styling */
+.section {
+    padding: 50px 20px;
     text-align: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+#about {
+    background-color: #eee;
+    padding: 40px 20px;
 }
 
-p {
-    font-size: 1rem;
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
     color: #666;
 }

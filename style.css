@@ -66,15 +66,35 @@ body {
 
 .about-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
+    justify-content: center;
+    margin-left: 100px;
 }
 
 .about-image {
-    width: 150px;
-    height: 150px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content p {
+    flex: 1;
+    text-align: left;
+}
+
+#projects {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+}
+
+#cv {
+    background-color: #fff;
+}
+
+#contact {
+    background-color: #f9f9f9;
 }

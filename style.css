@@ -6,6 +6,9 @@ body, h1, p, ul, li {
     font-family: 'Arial', sans-serif;
 }
 
+/* Importing Pacifico font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 /* Body styling */
 body {
     background-color: #f9f9f9;
@@ -17,7 +20,7 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: #555;
     color: white;
     padding: 10px 20px;
@@ -25,16 +28,18 @@ body {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 20px;
 }
 
-.navbar-left .logo {
-    height: 40px;
-    width: auto;
+.navbar-left .navbar-name {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    color: white;
 }
 
 .navbar-right {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 20px;
 }
 
@@ -69,7 +74,7 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    justify-content: center;
+    justify-content: flex-start;
     margin-left: 100px;
 }
 

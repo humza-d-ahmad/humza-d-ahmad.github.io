@@ -6,8 +6,8 @@ body, h1, p, ul, li {
     font-family: 'Arial', sans-serif;
 }
 
-/* Importing Pacifico font */
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* Importing Pacifico and Silkscreen fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Silkscreen&display=swap');
 
 /* Body styling */
 body {
@@ -17,11 +17,15 @@ body {
 }
 
 /* Navbar styling */
+
+/* tan color: (#D2B48C) */
+/* brown color: (#573a00) */
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: #555;
+    background-color: #D2B48C;
     color: white;
     padding: 10px 20px;
     position: sticky;
@@ -32,9 +36,12 @@ body {
 }
 
 .navbar-left .navbar-name {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Silkscreen', serif;
     font-size: 24px;
     color: white;
+    font-weight: 700;
+    font-style: normal;
+    padding-right: 50px;
 }
 
 .navbar-right {

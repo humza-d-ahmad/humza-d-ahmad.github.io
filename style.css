@@ -20,11 +20,13 @@ body {
 
 /* tan color: (#D2B48C) */
 /* brown color: (#573a00) */
+/* flex start */
+
 
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     background-color: #D2B48C;
     color: white;
     padding: 10px 20px;
@@ -35,35 +37,83 @@ body {
     gap: 20px;
 }
 
-.navbar-left .navbar-name {
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-name {
+    font-family: 'Silkscreen', serif;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+    padding-right: 50px;  /* Space between title and links */
+}
+
+/* .navbar-left .navbar-name {
     font-family: 'Silkscreen', serif;
     font-size: 24px;
     color: white;
     font-weight: 700;
     font-style: normal;
     padding-right: 50px;
-}
+} */
 
-.navbar-right {
+.navbar-links {
     display: flex;
-    justify-content: flex-start;
-    gap: 20px;
+    gap: 20px; /* Spacing between section links */
 }
 
-.navbar-right li {
+.navbar-links li {
     margin: 0;
 }
 
-.navbar-right li a {
+.navbar-links li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.navbar-right li a:hover {
+.navbar-links li a:hover {
     color: #ddd;
 }
+
+/* Social Media Icons */
+.navbar-right {
+    display: flex;
+    gap: 15px; /* Space between icons */
+}
+
+.navbar-right a.social-icon {
+    font-size: 24px; /* Set the size of the icon */
+    display: flex; /* Change to flexbox to enable centering */
+    align-items: center; /* Vertically center the icon */
+    justify-content: center; /* Horizontally center the icon */
+    width: 36px; /* Set width of the circle */
+    height: 36px; /* Ensure the height is the same as width for perfect circle */
+    padding: 0; /* Remove any extra padding */
+    border-radius: 50%; /* Circular background */
+    background-color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-right a.social-icon:hover {
+    background-color: #f0a500; /* Hover effect */
+    transform: scale(1.1);
+}
+
+.navbar-right a.social-icon i {
+    color: #333; /* Default icon color */
+    transition: color 0.3s ease;
+}
+
+.navbar-right a.social-icon:hover i {
+    color: white; /* Hover icon color */
+}
+
 
 /* Section styling */
 .section {

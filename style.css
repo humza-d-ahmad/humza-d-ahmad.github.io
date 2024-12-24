@@ -174,7 +174,7 @@ body {
     margin: 5px 0;
 }
 
-/* Contact Box Styling */
+/* Updated Contact Section Styling */
 #contact {
     background-color: #f9f9f9;
     padding: 50px 20px;
@@ -187,27 +187,20 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.contact-box h3 {
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
+    max-width: 600px; /* Ensure the box doesn't stretch too wide */
+    margin: 0 auto; /* Center the box */
+    text-align: center; /* Center the text inside the box */
 }
 
 .contact-box p {
-    font-size: 1rem;
+    font-size: 16px;
     color: #666;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Space between contact info sections */
 }
 
 .contact-box a {
     text-decoration: none;
-    color: #04AA6D;
+    color: #04AA6D; /* Button green color */
 }
 
 .contact-box a:hover {

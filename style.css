@@ -135,10 +135,61 @@ body {
     text-align: left;
 }
 
+/* Project Section */
 #projects {
     background-color: #f5f5f5;
     padding: 40px 20px;
+    text-align: center;
 }
+
+.project-box {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%; /* Adjust width for responsiveness */
+    max-width: 800px; /* Limit the maximum width */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Left-align text inside the project box */
+}
+
+.project-image {
+    width: 100%; /* Make the image responsive to the width of the box */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for styling */
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.project-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.view-project-btn {
+    display: block; /* Make the button a block-level element */
+    padding: 10px 20px;
+    background-color: #04AA6D;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 15px auto 0; /* This centers the button horizontally */
+    width: 175px; /* Keep the button size unchanged */
+    text-align: center; /* Ensure the text inside is centered */
+}
+
+.view-project-btn:hover {
+    background-color: #45a049;
+}
+
 
 #skills {
     background-color: #fff;

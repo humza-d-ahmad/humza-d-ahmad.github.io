@@ -6,6 +6,27 @@ body, h1, p, ul, li {
     font-family: 'Arial', sans-serif;
 }
 
+/* Section Title Styling for h1 */
+h1 {
+    font-size: 36px; /* Make the title larger */
+    margin-bottom: 45px; /* Add some space below the title */
+    position: relative; /* Allow positioning of the underline */
+    text-align: center; /* Center the text */
+}
+
+/* Underline effect for h1 */
+h1::after {
+    content: "";
+    position: absolute;
+    left: 50%; /* Start the underline at the center of the title */
+    bottom: -20px; /* Adjust to control the space between the title and the underline */
+    width: 3%; /* Adjust this to control the length of the underline */
+    height: 3px; /* Set the thickness of the underline */
+    background-color: #aa7e04; /* Set the color of the underline */
+    transform: translateX(-50%); /* Shift the underline left by 50% of its width to center it */
+}
+
+
 /* Apply smooth scrolling to the entire page */
 html {
     scroll-behavior: smooth;
@@ -189,6 +210,40 @@ body {
 .view-project-btn:hover {
     background-color: #45a049;
 }
+
+/* Common Button Styling */
+.view-project-btn, .view-report-btn {
+    display: block; /* Make the button a block-level element */
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 15px auto 0; /* This centers the button horizontally */
+    width: 175px; /* Keep the button size unchanged */
+    text-align: center; /* Ensure the text inside is centered */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* View Project Button Styling */
+.view-project-btn {
+    background-color: #04AA6D; /* Green color */
+}
+
+.view-project-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05);
+}
+
+/* View Report Button Styling */
+.view-report-btn {
+    background-color: #f57c00; /* Orange color */
+}
+
+.view-report-btn:hover {
+    background-color: #ff8f00; /* Darker orange on hover */
+    transform: scale(1.05);
+}
+
 
 
 #skills {

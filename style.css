@@ -173,6 +173,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left; /* Left-align text inside the project box */
+    margin-bottom: 100px;
 }
 
 .project-image {

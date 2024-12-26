@@ -263,7 +263,7 @@ body {
     align-items: center;
     position: relative;
     width: 300px;  /* Fixed width for the wheel */
-    height: 350px; /* Fixed height for the wheel */
+    height: 300px; /* Fixed height for the wheel */
     margin: 0 auto;
     padding: 20px;
     border-radius: 50%;
@@ -309,51 +309,51 @@ body {
 
 
 /* Positioning for the logos */
-.skills-category .skill-wheel li:nth-child(1) {
+.skills-category .skill-wheel li:nth-child(1) { /* Python */
     position: absolute;
     top: 5%;
     left: 43%;
     transform: translateX(-50%);
 }
 
-.skills-category .skill-wheel li:nth-child(2) {
+.skills-category .skill-wheel li:nth-child(2) { /* C++ */
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 73%;
     transform: translateX(-50%);
 }
 
-.skills-category .skill-wheel li:nth-child(3) {
+.skills-category .skill-wheel li:nth-child(3) { /* Java */
     position: absolute;
-    top: 42%;
+    top: 35%;
     left: 43%;
     transform: translateX(-50%);
 }
 
-.skills-category .skill-wheel li:nth-child(4) {
+.skills-category .skill-wheel li:nth-child(4) { /* SQL */
     position: absolute;
-    top: 65%;
+    top: 50%;
     left: 13%;
     transform: translateX(-50%);
 }
 
-.skills-category .skill-wheel li:nth-child(5) {
+.skills-category .skill-wheel li:nth-child(5) { /* html */
     position: absolute;
-    top: 85%;
+    top: 65%;
     left: 43%;
     transform: translateX(-50%);
 }
 
-.skills-category .skill-wheel li:nth-child(6) {
+.skills-category .skill-wheel li:nth-child(6) { /* css */
     position: absolute;
-    top: 65%;
+    top: 50%;
     left: 73%;
     transform: translateX(-50%);
 }
 
-.skills-category .skill-wheel li:nth-child(7) {
+.skills-category .skill-wheel li:nth-child(7) { /* R */
     position: absolute;
-    top: 25%;  /* Change this to adjust vertical position */
+    top: 20%;  /* Change this to adjust vertical position */
     left: 13%;  /* Change this to adjust horizontal position */
     transform: translateX(-50%);
 }

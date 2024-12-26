@@ -249,7 +249,6 @@ body {
 
 
 
-
 #skills {
     background-color: #fff;
     padding: 40px 20px;
@@ -287,7 +286,7 @@ body {
 /* Styling for the language name */
 .skills-category .skill-wheel li .language-name {
     position: absolute;
-    bottom: -20px; /* Position the name below the logo */
+    bottom: -23px; /* Position the name below the logo */
     left: 50%;
     transform: translateX(-50%);
     font-size: 14px;

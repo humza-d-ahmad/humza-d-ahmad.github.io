@@ -137,7 +137,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 300px;
     justify-content: flex-start;
     margin-left: 100px;
 }
@@ -152,10 +152,26 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.about-content p {
-    flex: 1;
-    text-align: left;
+.about-content p .bold-line {
+    font-weight: bold; /* Keep the text bold */
+    display: block; /* Make the entire block bold */
+    text-align: center; /* Center everything in the bold line */
 }
+
+.about-content p .hi-im {
+    font-size: 1.2rem; /* Smaller size for "Hi, I'm" */
+}
+
+.about-content p .humza {
+    font-size: 2.5rem; /* Larger size for "Humza" */
+    margin-top: 5px; /* Optional: Adjust spacing between "Hi, I'm" and "Humza" */
+}
+
+.about-content p {
+    text-align: center; /* Ensure the rest of the text remains left-aligned */
+}
+
+
 
 /* Project Section */
 #projects {

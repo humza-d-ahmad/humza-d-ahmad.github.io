@@ -67,6 +67,7 @@ body {
     color: white;
     font-weight: 700;
     padding-right: 30px;  /* Space between title and links */
+    text-decoration: none;
 }
 
 .navbar-links {
@@ -128,21 +129,25 @@ body {
     text-align: center;
 }
 
-#about {
-    background-color: #eee;
-    padding: 40px 20px;
+.intro {
+    background-color: #f5f5f5;
+    padding: 150px 20px;
 }
 
-.about-content {
+#intro p {
+    color: #666; /* Light grey color */
+}
+
+.intro-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 300px;
+    gap: 100px;
     justify-content: flex-start;
-    margin-left: 100px;
+    margin-left: 230px;
 }
 
-.about-image {
+.intro-image {
     width: 100%; /* Make image responsive */
     max-width: 400px; /* Limit the max width */
     height: auto;
@@ -152,26 +157,32 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.about-content p .bold-line {
+.intro-content p .bold-line {
     font-weight: bold; /* Keep the text bold */
     display: block; /* Make the entire block bold */
     text-align: center; /* Center everything in the bold line */
 }
 
-.about-content p .hi-im {
+.intro-content p .hi-im {
     font-size: 1.2rem; /* Smaller size for "Hi, I'm" */
+    color: #666;              /* Slightly grey color for contrast */
 }
 
-.about-content p .humza {
+.intro-content p .humza {
     font-size: 2.5rem; /* Larger size for "Humza" */
-    margin-top: 5px; /* Optional: Adjust spacing between "Hi, I'm" and "Humza" */
+    margin-top: 5px;
+    /* Optional: Adjust spacing between "Hi, I'm" and "Humza" */
+    color: black
 }
 
-.about-content p {
+.intro-content p {
     text-align: center; /* Ensure the rest of the text remains left-aligned */
 }
 
-
+#about {
+    background-color: #eee;
+    padding: 40px 20px;
+}
 
 /* Project Section */
 #projects {

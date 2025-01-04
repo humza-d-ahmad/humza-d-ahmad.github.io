@@ -445,6 +445,208 @@ body {
     }
 }
 
+/* Skill Wheel Container for Libraries */
+.skills-category .libraries-wheel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;  /* Fixed width for the wheel */
+    height: 300px; /* Fixed height for the wheel */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: relative;
+}
+
+/* Logo Size for Libraries */
+.skills-category .libraries-wheel li img {
+    width: 50px;  /* Set the size for each logo */
+    height: 50px; /* Set the size for each logo */
+    transition: transform 0.3s ease;  /* Smooth scaling effect on hover */
+}
+
+/* Pop-out effect on hover (for Libraries) */
+.skills-category .libraries-wheel li:hover img {
+    transform: scale(1.3);  /* Logos will grow on hover */
+    z-index: 10; /* Ensure hovered logo stays on top */
+}
+
+/* Styling for the library name */
+.skills-category .libraries-wheel li .library-name {
+    position: absolute;
+    bottom: -23px; /* Position the name below the logo */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #333;
+    opacity: 0;  /* Start with the name hidden */
+    transition: opacity 0.3s ease; /* Fade in the name */
+    text-align: center;
+}
+
+/* Pop-out effect on hover (logo and library name) */
+.skills-category .libraries-wheel li:hover {
+    transform: scale(1.3); /* Increase the size of the logo */
+    z-index: 10; /* Ensure hovered logo is on top */
+}
+
+.skills-category .libraries-wheel li:hover .library-name {
+    opacity: 1; /* Show the library name */
+}
+
+/* Positioning for the libraries logos */
+.skills-category .libraries-wheel li:nth-child(1) { /* Pandas */
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.skills-category .libraries-wheel li:nth-child(2) { /* Matlab */
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    transform: translateX(-50%);
+}
+
+.skills-category .libraries-wheel li:nth-child(3) { /* Numpy */
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.skills-category .libraries-wheel li:nth-child(4) { /* Scikit-Learn */
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateX(-50%);
+}
+
+.skills-category .libraries-wheel li:nth-child(5) { /* Seaborn */
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.skills-category .libraries-wheel li:nth-child(6) { /* Selenium */
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translateX(-50%);
+}
+
+.skills-category .libraries-wheel li:nth-child(7) { /* CatBoost */
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    transform: translateX(-50%);
+}
+
+
+/* Skill Wheel Container for Tools */
+.skills-category .tools-wheel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;  /* Fixed width for the wheel */
+    height: 300px; /* Fixed height for the wheel */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: relative;
+}
+
+/* Logo Size for Tools */
+.skills-category .tools-wheel li img {
+    width: 50px;  /* Set the size for each logo */
+    height: 50px; /* Set the size for each logo */
+    transition: transform 0.3s ease;  /* Smooth scaling effect on hover */
+}
+
+/* Pop-out effect on hover (for Tools) */
+.skills-category .tools-wheel li:hover img {
+    transform: scale(1.3);  /* Logos will grow on hover */
+    z-index: 10; /* Ensure hovered logo stays on top */
+}
+
+/* Styling for the tool name */
+.skills-category .tools-wheel li .tool-name {
+    position: absolute;
+    bottom: -23px; /* Position the name below the logo */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #333;
+    opacity: 0;  /* Start with the name hidden */
+    transition: opacity 0.3s ease; /* Fade in the name */
+    text-align: center;
+}
+
+/* Pop-out effect on hover (logo and tool name) */
+.skills-category .tools-wheel li:hover {
+    transform: scale(1.3); /* Increase the size of the logo */
+    z-index: 10; /* Ensure hovered logo is on top */
+}
+
+.skills-category .tools-wheel li:hover .tool-name {
+    opacity: 1; /* Show the tool name */
+}
+
+/* Positioning for the tools logos */
+.skills-category .tools-wheel li:nth-child(1) { /* GitHub */
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.skills-category .tools-wheel li:nth-child(6) { /* Power BI */
+    position: absolute;
+    top: 20%;
+    left: 75%;
+    transform: translateX(-50%);
+}
+
+.skills-category .tools-wheel li:nth-child(3) { /* VS Code */
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.skills-category .tools-wheel li:nth-child(7) { /* Office 365 */
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateX(-50%);
+}
+
+.skills-category .tools-wheel li:nth-child(5) { /* SQL Server Management Studio */
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.skills-category .tools-wheel li:nth-child(2) { /* Docker */
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translateX(-50%);
+}
+
+.skills-category .tools-wheel li:nth-child(4) { /* Jupyter Notebook */
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    transform: translateX(-50%);
+}
 
 
 

@@ -179,9 +179,21 @@ body {
     text-align: center; /* Ensure the rest of the text remains left-aligned */
 }
 
+#about h1 {
+    margin-bottom: 75px; /* Adds space below the h1 */
+}
+
+#about h1::after {
+    width: 4%; /* Ensure this matches the global rule */
+}
+
 #about {
     background-color: #eee;
-    padding: 40px 20px;
+    padding: 40px 250px;
+}
+
+#about p {
+    margin-bottom: 50px;  /* Adds space below each paragraph in the About section */
 }
 
 /* Project Section */
